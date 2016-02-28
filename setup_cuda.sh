@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # This is necessary for installation to work on amazon AMIs
+# The amazon machines don't come with all the nvidia drivers
 sudo apt-get update && sudo apt-get -y upgrade
 sudo apt-get install -y linux-image-extra=`uname -r`
 sudo apt-get update
