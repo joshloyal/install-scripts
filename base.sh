@@ -18,3 +18,7 @@ sudo apt-get install -y libatlas-base-dev \
 
 echo "Installing pip"
 sudo pip install -U pip
+
+echo "Configuring PATH"
+mkdir -p $HOME/bin
+echo "export PATH=\$HOME/bin:\$PATH" >> $HOME/.bashrc
