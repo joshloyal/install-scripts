@@ -13,7 +13,7 @@ tar -zvxf cudnn-6.5-linux-x64-v2.tgz && rm cudnn-6.5-linux-x64-v2.tgz
 sudo cp cudnn-6.5-linux-x64-v2/cudnn.h /usr/local/cuda/include/
 sudo cp cudnn-6.5-linux-x64-v2/libcudnn* /usr/local/cuda/lib64/
 sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
-rm cudnn-6.5-linux-x64-v2.tgz
+rm -rf cudnn-6.5-linux-x64-v2
 
 # setup environmental variables for CUDA
 echo "export CUDA_HOME=/usr/local/cuda" >> $HOME/.bashrc
