@@ -7,8 +7,8 @@ sudo apt-get install -y linux-image-extra-`uname -r`
 sudo apt-get update
 
 # Install CUDA 7 (must use cuda 7.0 on amazon ami...)
-wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1410/x86_64/cuda-repo-ubuntu1410_7.0-28_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu1410_7.0-28_amd64.deb && rm cuda-repo-ubuntu1410_7.0-28_amd64.deb
+wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb && rm cuda-repo-ubuntu1404-7-5-local_7.5-18_amd64.deb
 sudo apt-get update -y
 sudo apt-get install cuda -y
 

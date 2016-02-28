@@ -1,0 +1,8 @@
+[global]
+float = float32
+device = gpu
+optimizer = fast_run
+
+[blas]
+ldflags = -L/home/ubuntu/OpenBLAS -lopenblas
+#ldflags = -lf77blas -latlas -llapack -lgfortran
