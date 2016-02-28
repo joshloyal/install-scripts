@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# This is necessary for installation to work on amazon AMIs
+sudo apt-get update && sudo apt-get -y upgrade
+sudo apt-get install -y linux-image-extra=`uname -r`
+sudo apt-get update
+
 # Install CUDA 7 (must use cuda 7.0 on amazon ami...)
 wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1410/x86_64/cuda-repo-ubuntu1410_7.0-28_amd64.deb
 sudo dpkg -i cuda-repo-ubuntu1410_7.0-28_amd64.deb && rm cuda-repo-ubuntu1410_7.0-28_amd64.deb
