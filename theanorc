@@ -3,6 +3,14 @@ float = float32
 device = gpu
 optimizer = fast_run
 
+[lib]
+cnmem = 0.9
+
+[nvccs]
+fastmath = True
+
 [blas]
+# openblas flags
 ldflags = -L/home/ubuntu/OpenBLAS -lopenblas
+# atlas flags
 #ldflags = -lf77blas -latlas -llapack -lgfortran
